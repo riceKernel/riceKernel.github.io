@@ -9,16 +9,12 @@
   <link rel="shortcut icon" id="favicon" href="favicon.png"> 
   <meta name="author" content="riceKernel">
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
   <link href='css/main.css' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <script>
     $(document).ready(function(){
-      $(".js-main-page").onepage_scroll({
-        sectionContainer: "section",
-        responsiveFallback: 600,
-        loop: false
-      });
+      $(".js-main-page").fullpage();
     });
   </script>
 </head>
@@ -26,10 +22,11 @@
   <div class="js-main-page">
     
     <section class="section">
-      <h1>riceKernel</h1>
-      <div class="section-menu">
+      <h1 class="section-title mod-logo">riceKernel</h1>
+      <div class="section-menu js-scrolling-menu">
         <div class="section-menu-item">
-
+          <span class="section-menu-item-icon">icon</span>
+          <span class="section-menu-item-text">Projects</span>
         </div>
       </div>
     </section>
@@ -42,5 +39,6 @@
       <h2>How do we do it?</h2>
     </section>
   </div>
+  <script type="text/javascript" src="js/scrolling.menu.js"></script>
 </body>
 </html>
