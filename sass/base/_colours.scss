@@ -1,0 +1,46 @@
+/**
+  *Schemes
+  */
+$schemes: (
+  'blue': (
+    tint: #C5CAE9,
+    base: #3F51B5,
+    shade: #303F9F,
+    accent-light: #FFD740,
+    accent-dark: #FFAB00
+  )
+);
+
+$scheme: 'blue';
+
+$tint: map-get(map-get($schemes, $scheme), 'tint');
+$base: map-get(map-get($schemes, $scheme), 'base');
+$shade: map-get(map-get($schemes, $scheme), 'shade');
+$accent-light: map-get(map-get($schemes, $scheme), 'accent-light');
+$accent-dark: map-get(map-get($schemes, $scheme), 'accent-dark');
+
+/**
+  *Blacks
+  */
+$black: #202020;
+$blackish: #2D2D2D;
+$black-text: transparentize($black, 0.13);
+$black-secondary-text: transparentize($black, 0.46);
+$black-disabled-text: transparentize($black, 0.74);
+$black-dividers: transparentize($black, 0.88);
+
+/**
+  *Whites
+  */
+$white: #fff;
+$white-text: transparentize($white, 0.13);
+$white-secondary-text: transparentize($white, 0.46);
+$white-disabled-text: transparentize($white, 0.74);
+$white-dividers: transparentize($white, 0.88);
+
+/**
+  * Traffic lights
+  */
+$success: #CCFF90;
+$warning: #FFD180;
+$error: #FF8A80;
