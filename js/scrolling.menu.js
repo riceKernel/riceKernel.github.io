@@ -31,7 +31,7 @@ function toggleFloats(index, nextIndex, direction){
     journeyBtn.addClass("mod-blue");
   }
 
-  journeyBtn.css({ top: (nextIndex * 100) + "%"}).text(pages[index + 1]);
+  journeyBtn.css({ top: (nextIndex * 100) + "%"}).text(pages[nextIndex]);
 }
 
 function leanJourneyBtn(e) {
