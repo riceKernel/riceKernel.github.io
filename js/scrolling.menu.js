@@ -45,4 +45,9 @@ journeyBtn.on("click", function() {
   $.fn.fullpage.moveSectionDown();
 });
 
-$("html").on("mousemove", leanJourneyBtn);
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  journeyBtn.css({"margin-top": "-90px"});
+}
+else {
+  $("html").on("mousemove", leanJourneyBtn);
+}
