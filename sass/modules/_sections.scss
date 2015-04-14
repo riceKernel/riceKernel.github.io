@@ -55,23 +55,27 @@
     margin-left: -75px;
     height: 150px;
     width: 150px;
-    margin-top: -90px;
+    margin-top: -50px;
     background-color: $black;
     text-align: center;
     line-height: 150px;
     border-radius: 50%;
     z-index: 1;
-    @include transition(top 1.2s, margin-top .6s, background-color 1.4s);
+    @include transition(top 1.2s linear 0, background-color 1.4s linear 0);
     -webkit-perspective: 1000;
     -webkit-backface-visibility: hidden;
     cursor: pointer;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     &:hover {
-      margin-top: -110px;
+      background-color: $base;
     }
 
     &.mod-blue {
       background-color: $base;
+
+      &:hover {
+        background-color: $black;
+      }
     }
   }
