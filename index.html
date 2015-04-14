@@ -13,23 +13,14 @@
   <link href='css/main.css' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <script>
-    $(document).ready(function(){
-      var scrollingMenu = $(".js-scrolling-menu");
-      $(".js-main-page").fullpage({
-        onLeave: function(index, nextIndex, direction){
-          //after leaving section 2
-          if(index == 1){
-            scrollingMenu.addClass("mod-fixed").css({ top: ((nextIndex - 1) * 100) + "%"});
-          }
-          else if(nextIndex == 1) {
-            scrollingMenu.removeClass("mod-fixed").css({ top: "50%"});
-          }
-          else {
-            scrollingMenu.css({ top: ((nextIndex - 1) * 100) + "%"});
-          }
-        }
-      });
-    });
+$(document).ready(function(){
+  var fullPage = $(".js-main-page");
+
+  fullPage.fullpage({
+    onLeave: toggleFloats
+  });
+
+});
   </script>
 </head>
 <body>
@@ -37,6 +28,7 @@
     
     <section class="section">
       <h1 class="section-title mod-logo">riceKernel</h1>
+
       <div class="section-menu js-scrolling-menu">
         <a class="section-menu-item">
           Projects
@@ -45,8 +37,8 @@
           Us
         </a>
       </div>
-      <p class="section-tagline">Tagline</p>
-      <div class="section-journey-button">Take the journey</div>
+      <p class="section-tagline">We build it so you dont have to</p>
+      <div class="section-journey js-journey">What do we do?</div>
     </section>
     
     <section class="section">
@@ -55,6 +47,10 @@
     
     <section class="section">
       <h2 class="section-title">How do we do it?</h2>
+    </section>
+    
+    <section class="section">
+      <h2 class="section-title">Contact us</h2>
     </section>
   </div>
   <script type="text/javascript" src="js/scrolling.menu.js"></script>

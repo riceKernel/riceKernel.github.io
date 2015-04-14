@@ -22,14 +22,18 @@
     height: 80px;
     background-color: transparent;
     padding: 0 20%;
-    transition: all .6s ease-in-out;
+    transition: all .6s ease;
     top: 50%;
 
-    &.mod-fixed{
+    &.mod-float {
       background-color: $black;
       position: absolute;
       top: 100%;
       z-index: 1;
+    }
+
+    &.mod-blue {
+      background-color: $base;
     }
   }
 
@@ -40,3 +44,30 @@
       float: left;
       padding: 0 15px;
     }
+
+  .section-journey {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -75px;
+    height: 150px;
+    width: 150px;
+    margin-top: -80px;
+    background-color: $black;
+    text-align: center;
+    line-height: 150px;
+    border-radius: 50%;
+    z-index: 1;
+    @include transition(all .6s ease);
+    cursor: pointer;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    &:hover {
+      margin-top: -100px;
+      @include animation(0)
+    }
+
+    &.mod-blue {
+      background-color: $base;
+    }
+  }

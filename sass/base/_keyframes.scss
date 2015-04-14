@@ -1,0 +1,11 @@
+@include keyframes(bob) {
+  0% {
+    margin-top: -80px;
+  }
+  50% {
+    margin-top: -100px;
+  }
+  100% {
+    margin-top: -80px;
+  }
+}
