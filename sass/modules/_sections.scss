@@ -22,8 +22,11 @@
     height: 80px;
     background-color: transparent;
     padding: 0 20%;
-    transition: all .6s ease;
+    @include transition(top 1.2s, background-color 1.4s);
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
     top: 50%;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     &.mod-float {
       background-color: $black;
@@ -52,19 +55,20 @@
     margin-left: -75px;
     height: 150px;
     width: 150px;
-    margin-top: -80px;
+    margin-top: -90px;
     background-color: $black;
     text-align: center;
     line-height: 150px;
     border-radius: 50%;
     z-index: 1;
-    @include transition(all .6s ease);
+    @include transition(top 1.2s, margin-top .6s, background-color 1.4s);
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
     cursor: pointer;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     &:hover {
-      margin-top: -100px;
-      @include animation(0)
+      margin-top: -110px;
     }
 
     &.mod-blue {
