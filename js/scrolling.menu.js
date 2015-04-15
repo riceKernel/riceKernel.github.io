@@ -43,7 +43,6 @@ journeyBtn.on("click", function() {
 });
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-  journeyBtn.css({"margin-top": "-90px"});
   window.addEventListener('deviceorientation', function(e) {
     var x = e.gamma,
         y = e.beta;

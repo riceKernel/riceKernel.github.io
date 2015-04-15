@@ -1,0 +1,11 @@
+.tiles {
+  @include outer-container;
+}
+
+  .tile {
+    text-align: center;
+
+    &.mod-4 {
+      @include span-columns(4);
+    }
+  }
