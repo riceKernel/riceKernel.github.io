@@ -45,15 +45,25 @@ journeyBtn.on("click", function() {
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   journeyBtn.css({"margin-top": "-90px"});
   window.addEventListener('deviceorientation', function(e) {
-    var marginX = -75 + 150 * ((e.gamma / 180) - 0.5),
-        marginY = -50 - 80 * (e.beta / 180);
-    leanJourneyBtn(marginX, marginY);
+    var x = e.gamma,
+        y = e.beta;
+
+    x = x > 90 ? 90 : x;
+    x = x < -90 ? -90 : x;
+
+    x += 90;
+    y += 90;
+
+    x = -75 + 150 * ((x / 180) - 0.5);
+    y = -50 - 80 * (y / 180);
+
+    leanJourneyBtn(x, y);
   })
 }
 else {
   window.addEventListener('mousemove', function(e) {
-    var marginX = -75 + 150 * ((e.pageX / pageWidth) - 0.5),
-        marginY = -50 - 80 * (e.pageY / pageHeight);
-    leanJourneyBtn(marginX, marginY);
+    var x = -75 + 150 * ((e.pageX / pageWidth) - 0.5),
+        y = -50 - 80 * (e.pageY / pageHeight);
+    leanJourneyBtn(x, y);
   })
 }
