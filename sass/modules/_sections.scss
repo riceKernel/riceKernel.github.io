@@ -46,6 +46,15 @@
       color: $white;
       float: left;
       padding: 0 15px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $base;
+      }
+
+      .mod-blue &:hover {
+        background-color: $black;
+      }
     }
 
   .section-journey {
