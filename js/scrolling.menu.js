@@ -47,8 +47,14 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     var x = e.gamma,
         y = e.beta;
 
+    x = x > 90 ? 90 : x;
+    x = x < -90 ? -90 : x;
+
+    x += 90;
+    y += 90;
+
     x = -75 + 150 * ((x / 180) - 0.5);
-    y = -50 - 80 * (y / 90);
+    y = -50 - 80 * (y / 180);
 
     leanJourneyBtn(x, y);
   })
