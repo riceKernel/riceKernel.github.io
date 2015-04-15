@@ -54,7 +54,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     x += 90;
     y += 90;
 
-    x = -75 + 150 * ((x / 180) - 0.5);
+    x = -75 + 150 * (x / 180);
     y = -50 - 80 * (y / 180);
 
     leanJourneyBtn(x, y);
