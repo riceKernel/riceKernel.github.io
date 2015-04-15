@@ -34,11 +34,8 @@ function toggleFloats(index, nextIndex, direction){
   journeyBtn.css({ top: (nextIndex * 100) + "%"}).text(pages[nextIndex]);
 }
 
-function leanJourneyBtn(e) {
-  var marginLeft = -75 + 50 * ((e.pageX / pageWidth) - 0.5),
-      marginTop = -50 - 80 * (e.pageY / pageHeight);
-  journeyBtn.css({"margin-left": marginLeft, "margin-top": marginTop});
-  console.log(marginTop);
+function leanJourneyBtn(x, y) {
+  journeyBtn.css({"margin-left": x, "margin-top": y});
 }
 
 journeyBtn.on("click", function() {
@@ -47,7 +44,16 @@ journeyBtn.on("click", function() {
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   journeyBtn.css({"margin-top": "-90px"});
+  window.addEventListener('deviceorientation', function(e) {
+    var marginX = -75 + 150 * ((e.gamma / 180) - 0.5),
+        marginY = -50 - 80 * (e.beta / 180);
+    leanJourneyBtn(marginX, marginY);
+  })
 }
 else {
-  $("html").on("mousemove", leanJourneyBtn);
+  window.addEventListener('mousemove', function(e) {
+    var marginX = -75 + 150 * ((e.pageX / pageWidth) - 0.5),
+        marginY = -50 - 80 * (e.pageY / pageHeight);
+    leanJourneyBtn(marginX, marginY);
+  })
 }
