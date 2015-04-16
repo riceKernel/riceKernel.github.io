@@ -18,6 +18,7 @@ $(document).ready(function(){
 
   fullPage.fullpage({
     scrollingSpeed: 1100,
+    loopHorizontal: false,
     onLeave: toggleFloats
   });
 
@@ -46,24 +47,20 @@ $(document).ready(function(){
     </section>
     
     <section class="section">
-      <h2 class="section-title">What do we do?</h2>
-      <p class="section-tagline">We make data look good</p>
-      <div class="section-content tiles">
-        <div class="tile mod-4">
-          <h3 class="tile-title">Responsive websites</h3>
-          <p class="tile-text">We use the latest technology to build stunning, functional, cross-platform websites.</p>
-          <a class="tile-link">Read more</a>
-        </div>
-        <div class="tile mod-4">
-          <h3 class="tile-title">Native apps</h3>
-          <p class="tile-text">Targeted custom apps for any platform.</p>
-          <a class="tile-link">Read more</a>
-        </div>
-        <div class="tile mod-4">
-          <h3 class="tile-title">Enterprise solutions</h3>
-          <p class="tile-text">We thrive on solving problems by building robust, integrated technology solutions.</p>
-          <a class="tile-link">Read more</a>
-        </div>
+      <h1 class="section-title mod-slide-title">What do we do?</h1>
+      <p class="section-tagline mod-slide-tagline">We make data look good</p>
+
+      <div class="slide">
+        <h2 class="section-title">Responsive websites</h2>
+        <p class="section-tagline">We use the latest technology to build stunning, functional, cross-platform websites.</p>
+      </div>
+      <div class="slide">
+        <h2 class="section-title">Native apps</h2>
+        <p class="section-tagline">Targeted custom apps for any platform.</p>
+      </div>
+      <div class="slide">
+        <h2 class="section-title">Enterprise solutions</h2>
+        <p class="section-tagline">We thrive on solving problems by building robust, integrated technology solutions.</p>
       </div>
     </section>
     
