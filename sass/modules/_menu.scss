@@ -1,13 +1,18 @@
 .menu {
   width: 100%;
-  height: 80px;
+  max-height: 80px;
   background-color: transparent;
   padding: 0 20%;
-  @include transition(top 1.2s, background-color 1.4s);
+  @include transition(all 1.2s);
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
   top: 50%;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+
+  @include media($mobile) {
+    padding: 0;
+  }
 
   &.mod-float {
     background-color: $black;
@@ -19,6 +24,10 @@
   &.mod-blue {
     background-color: $base;
   }
+
+  &.mod-show-mobile {
+    max-height: 500px;
+  }
 }
 
   .menu-item {
@@ -29,8 +38,10 @@
     padding: 0 15px;
     cursor: pointer;
     @include transition(background-color .6s);
+
     @include media($mobile) {
-      display: none;
+      width: 100%;
+      text-align: center;
     }
 
     &:hover {

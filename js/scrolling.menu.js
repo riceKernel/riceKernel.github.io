@@ -66,3 +66,7 @@ else {
     leanJourneyBtn(x, y);
   })
 }
+
+$(".js-show-mobile-menu").on("click", function() {
+  $(this).parent().toggleClass("mod-show-mobile");
+})
