@@ -40,7 +40,7 @@
     line-height: 150px;
     border-radius: 50%;
     z-index: 2;
-    @include transition(top 1.2s linear 0, background-color 1.4s linear 0);
+    @include transition(top 1.2s, background-color 1.4s);
     -webkit-perspective: 1000;
     -webkit-backface-visibility: hidden;
     cursor: pointer;
