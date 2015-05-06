@@ -1,0 +1,58 @@
+<!doctype html>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>riceKernel ltd.</title>
+  <meta name="title" content="About riceKernel" />
+  <meta name="description" content="Website, android, ios, and web app development." />
+
+  <link rel="shortcut icon" id="favicon" href="favicon.png"> 
+  <meta name="author" content="riceKernel">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+  <link href='css/main.css' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <script>
+$(document).ready(function(){
+  var fullPage = $(".js-main-page");
+
+  fullPage.fullpage({
+    scrollingSpeed: 1100,
+    loopHorizontal: false,
+    onLeave: toggleFloats
+  });
+
+});
+  </script>
+</head>
+<body>
+  <div class="js-main-page">
+    
+    <div class="menu">
+      <a class="menu-mobile js-show-mobile-menu">Menu</a>
+      <a class="menu-item">
+        Projects
+      </a>
+      <a class="menu-item">
+        About us
+      </a>
+      <a class="menu-item">
+        Solutions
+      </a>
+    </div>
+
+    <section class="section">
+
+      <h1 class="section-title mod-logo">About us</h1>
+
+      
+      <p class="section-tagline">We build it so you dont have to</p>
+      
+    </section>
+    
+  
+  </div>
+ 
+</body>
+</html>
