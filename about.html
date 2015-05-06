@@ -17,6 +17,11 @@
 $(document).ready(function(){
   var fullPage = $(".js-main-page");
 
+    fullPage.fullpage({
+    scrollingSpeed: 1100,
+    loopHorizontal: false,
+    onLeave: toggleFloats
+  });
   
 
 });
@@ -50,6 +55,6 @@ $(document).ready(function(){
     
   
   </div>
- 
+  <script type="text/javascript" src="js/scrolling.menu.js"></script>
 </body>
 </html>
