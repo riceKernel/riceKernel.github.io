@@ -1,7 +1,5 @@
-.single-page {
-  background-color: $black;
-  color: $white;
-}
+
+
 
 
 .section {
@@ -68,3 +66,9 @@
   .slide {
     padding: 0 60px;
   }
+
+  .single-page {
+  background-color: $black;
+  color: $white;
+  height: 100% !important;
+}

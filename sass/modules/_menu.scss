@@ -26,10 +26,10 @@
   }
 
   &.fixed-float {
-    background-color: $black;
-    position: absolute;
+    background-color: $base;
+    position: relative;
     top: 0px;
-    z-index: 6;
+    z-index: 1;
   }
 
   &.mod-show-mobile {
