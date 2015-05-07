@@ -68,7 +68,18 @@
   }
 
   .single-page {
+
   background-color: $black;
   color: $white;
-  height: 100% !important;
+
 }
+
+
+  .centred-div {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    margin-top: -50px;
+
+  }
