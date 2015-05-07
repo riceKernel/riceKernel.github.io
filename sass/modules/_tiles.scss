@@ -11,6 +11,8 @@
     @include transition(background-color .6s);
     cursor: pointer;
     margin-top: 10px;
+    text-decoration: none;
+    color: $white;
 
     &:hover {
       background-color: $base;
