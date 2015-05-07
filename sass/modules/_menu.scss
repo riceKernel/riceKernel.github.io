@@ -25,6 +25,13 @@
     background-color: $base;
   }
 
+  &.fixed-float {
+    background-color: $black;
+    position: absolute;
+    top: 0px;
+    z-index: 6;
+  }
+
   &.mod-show-mobile {
     max-height: 500px;
   }
