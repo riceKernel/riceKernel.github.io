@@ -44,6 +44,7 @@
     float: left;
     padding: 0 15px;
     cursor: pointer;
+    text-decoration: none;
     @include transition(background-color .6s);
 
     @include media($mobile) {
