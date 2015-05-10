@@ -1,0 +1,7 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="40px" height="40px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+<path style="fill-rule:evenodd;clip-rule:evenodd;" fill="white" d="M36,36H4c-2.209,0-4-1.791-4-4V4c0-2.209,1.791-4,4-4h32c2.209,0,4,1.791,4,4
+	v28C40,34.209,38.209,36,36,36z M38,4c0-1.104-0.896-2-2-2H4C2.896,2,2,2.895,2,4V26h36V4z M38,28H2V32c0,1.104,0.896,2,2,2h32
+	c1.104,0,2-0.896,2-2V28z M35,32c-0.553,0-1-0.448-1-1c0-0.553,0.447-1,1-1c0.552,0,1,0.447,1,1C36,31.552,35.553,32,35,32z M11,38
+	h18c0.552,0,1,0.447,1,1c0,0.552-0.448,1-1,1H11c-0.552,0-1-0.448-1-1C10,38.448,10.448,38,11,38z"/>
+</svg>
