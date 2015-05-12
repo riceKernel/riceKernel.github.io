@@ -3,11 +3,11 @@
 
 
 .section {
-  background-color: $base;
+  background-color: $blackish;
   color: $white;
 
   &:nth-child(even) {
-    background-color: $black;
+    background-color: $base;
   }
 }
 
@@ -83,4 +83,9 @@
     margin-top: -50px;
     padding: 15px;
 
+  }
+
+  .padded-img {
+    width: 75%;
+    
   }
