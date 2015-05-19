@@ -95,3 +95,17 @@
     background-size: cover;
     background-position: center;
   }
+
+  .nomobile {
+    @include media( $mobile ) {
+        display: none;
+    }
+  }
+.bignumber {
+  font-family: 'Paytone One';
+  font-size: 5em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 26px;
+}
