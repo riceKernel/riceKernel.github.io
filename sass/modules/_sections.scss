@@ -101,11 +101,18 @@
         display: none;
     }
   }
-.bignumber {
-  font-family: 'Paytone One';
-  font-size: 5em;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: bold;
-  line-height: 26px;
-}
+
+  .smallmobile {
+    @include media( $mobile ) {
+        font-size: 1.5em
+    }
+  }
+
+  .bignumber {
+    font-family: 'Paytone One';
+    font-size: 5em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 26px;
+  }
