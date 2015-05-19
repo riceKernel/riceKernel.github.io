@@ -23,6 +23,10 @@ $(document).ready(function(){
     loopHorizontal: false,
     onLeave: toggleFloats
   });
+
+  if (!document.addEventListener){
+        $(".circle-icon").attr("style", "display:none");
+    }
 });
   </script>
 </head>
